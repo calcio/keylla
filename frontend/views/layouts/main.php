@@ -57,7 +57,7 @@ FrontAsset::register($this);
                 <div class="col-md-4">
                     <div class="logo">
                         <h1><?= Html::a('Keylla Corrêa', ['site/index']) ?></h1>
-                        <h4><?= Html::a('Medicina Tradicional Chinesa', ['site/index']) ?></h4>
+                        <h4><?= Html::a('Terapias Orientais e Enfermagem', ['site/index']) ?></h4>
                     </div>
                 </div>
                 <div class="col-md-7">
