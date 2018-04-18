@@ -4,9 +4,6 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
 use frontend\assets\FrontAsset;
 use common\widgets\Alert;
 
@@ -35,12 +32,12 @@ FrontAsset::register($this);
         <div class="container">
 
             <div class="tb-contact pull-left">
-                <i class="fa fa-envelope color"></i> &nbsp; <a href="mailto:<?= Html::encode(Yii::$app->params['personalEmail']) ?>"><?= Html::encode(Yii::$app->params['personalEmail']) ?></a>
+                <i class="fa fa-envelope color"></i> &nbsp; <?= Html::mailto(Html::encode(Yii::$app->params['personalEmail']), Html::encode(Yii::$app->params['personalEmail'])) ?>
                 &nbsp;&nbsp;
 
                 <i class="fa fa-phone color"></i> &nbsp; <?= Html::encode(Yii::$app->params['personalCelphone']) ?>
             </div>
-            
+
             <!-- Social media starts -->
             <div class="tb-social pull-right">
                 <div class="brand-bg text-right">
@@ -49,36 +46,36 @@ FrontAsset::register($this);
                     <a href="<?= Html::encode(Yii::$app->params['linkedin']) ?>" class="linkedin" target="_new"><i class="fa fa-linkedin square-2 rounded-1"></i></a>
                 </div>
             </div>
-                                
+
             <div class="clearfix"></div>
         </div>
     </div>
-    
+
     <div class="header-2">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="logo">
-                        <h1><a href="/site/index">Keylla Corrêa</a></h1>
-                        <h4><a href="/site/index">Medicina Tradicional Chinesa</a></h4>
+                        <h1><?= Html::a('Keylla Corrêa', ['site/index']) ?></h1>
+                        <h4><?= Html::a('Medicina Tradicional Chinesa', ['site/index']) ?></h4>
                     </div>
                 </div>
                 <div class="col-md-7">
                     <div class="navy">
                         <ul>
                             <!-- Main menu -->
-                            <li><a href="/site">Home</a></li>
+                            <li><?= Html::a('Home', ['site/index']) ?></li>
                             <!-- <li><a href="#">Marcaçao de consulta</a></li> -->
-                            <li><a href="/treatments">Tratamentos</a>
-                            <li><a href="/site/about">Sobre</a></li>
-                            <li><a href="/site/contact">Contato</a></li>
+                            <li><?= Html::a('Tratamentos', ['treatments/index']) ?>
+                            <li><?= Html::a('Sobre', ['site/about']) ?></li>
+                            <li><?= Html::a('Contato', ['site/contact']) ?></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="medical-home">
         <div class="container">
         <?= $content ?>
@@ -98,7 +95,7 @@ FrontAsset::register($this);
                             <a href="<?= Html::encode(Yii::$app->params['linkedin']) ?>" class="linkedin" target="_new"><i class="fa fa-linkedin circle-3"></i></a>
                         </div>
 
-                        <!-- 
+                        <!--
                         <div class="subscribe-box">
                             <h5 class="bold">Receba novidades do site :</h5>
                             <form role="form">
@@ -111,11 +108,11 @@ FrontAsset::register($this);
                             </form>
                         </div> -->
                     </div>
-                </div>  
+                </div>
 
                 <div class="col-md-3 col-sm-6">
                     <div class="foot-item">
-                    <!--  
+                    <!--
                         <h5 class="bold"><i class="fa fa-comments"></i>&nbsp;&nbsp;Postagens recentes</h5>
                         <div class="foot-item-content">
                             <ul class="list-unstyled">
@@ -128,13 +125,13 @@ FrontAsset::register($this);
                         </div>-->
                     </div>
                 </div>
-                
+
                 <div class="col-md-4 col-sm-7">
                     <div class="foot-item">
                         <h5 class="bold"><i class="fa fa-building-o"></i>&nbsp;&nbsp;Contatos</h5>
                         <div class="foot-item-content address">
                             <h6 class="bold"><i class="fa fa-home"></i>&nbsp;&nbsp;Keylla Correa</h6>
-                            <!-- Paragraph 
+                            <!-- Paragraph
                             <p class="add">
                                Rua Profª. Delfina de F. Gomes, Nº 112, Casa 2<br />
                                Pendotiba - Niteroi - 24325-070.</p>-->
@@ -146,21 +143,21 @@ FrontAsset::register($this);
             </div>
         </div>
     </div>
-        
+
     <footer>
         <div class="container">
                 <p class="pull-left">Copyright &copy; <?= date('Y') ?></p>
                 <ul class="list-inline pull-right">
-                    <li><a href="/site">Home</a></li>
+                    <li><?= Html::a('Home', ['site/index']) ?></li>
                     <!-- <li><a href="#">Marcaçao de consulta</a></li> -->
-                    <li><a href="/treatments">Tratamentos</a>
-                    <li><a href="/site/about">Sobre</a></li>
-                    <li><a href="/site/contact">Contato</a></li>
+                    <li><?= Html::a('Tratamentos', ['treatments/index']) ?>
+                    <li><?= Html::a('Sobre', ['site/about']) ?></li>
+                    <li><?= Html::a('Contato', ['site/contact']) ?></li>
                 </ul>
                 <div class="clearfix"></div>
         </div>
     </footer>
-    
+
     </div>
 
     <!-- Scroll to top -->

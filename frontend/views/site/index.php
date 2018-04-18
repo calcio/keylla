@@ -20,11 +20,9 @@ $this->title = 'Keylla Corra Acupuntura e Estética';
 <div class="row">
     <?= $this->render('_testimonials', ['info' => null]) ?>
     <?= $this->render('_faq', ['info' => null]) ?>
-    <div class="clearfix visible-sm-block"></div>            
+    <div class="clearfix visible-sm-block"></div>
     <?= $this->render('_setup_appointment', ['info' => null]) ?>
 </div>
 
 <div class="divider-1"></div>
 <br />
-        
-
