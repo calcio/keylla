@@ -4,8 +4,8 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use frontend\assets\FrontAsset;
 use common\widgets\Alert;
+use frontend\assets\FrontAsset;
 
 FrontAsset::register($this);
 ?>
@@ -56,8 +56,8 @@ FrontAsset::register($this);
             <div class="row">
                 <div class="col-md-4">
                     <div class="logo">
-                        <h1><?= Html::a('Keylla Corrêa', ['site/index']) ?></h1>
-                        <h4><?= Html::a('Terapias Orientais e Enfermagem', ['site/index']) ?></h4>
+                        <h1 class="text-logo"><?= Html::a('Keylla Corrêa', ['site/index']) ?></h1>
+                        <h6><?= Html::a('Terapias Orientais e Enfermagem', ['site/index']) ?></h6>
                     </div>
                 </div>
                 <div class="col-md-7">
@@ -76,10 +76,8 @@ FrontAsset::register($this);
         </div>
     </div>
 
-    <div class="medical-home">
-        <div class="container">
+    <div class="main-block">
         <?= $content ?>
-        </div>
     </div>
 
     <div class="foot">

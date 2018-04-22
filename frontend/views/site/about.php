@@ -5,12 +5,20 @@
 use yii\helpers\Html;
 
 $this->title = 'Sobre';
-$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
+<div class="page-heading-two">
+    <div class="container">
+        <h2><?= Html::encode($this->title) ?></h2>
+        <div class="clearfix"></div>
+    </div>
+</div>
 
-    <p>This is the About page. You may modify the following file to customize its content:</p>
+<div class="container">
+    <div class="about-us-one">
+        
 
-    <code><?= __FILE__ ?></code>
+        <p>This is the About page. You may modify the following file to customize its content:</p>
+
+        <code><?= __FILE__ ?></code>
+    </div>
 </div>

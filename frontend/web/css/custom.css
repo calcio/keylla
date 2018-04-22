@@ -1,1 +1,15 @@
 /* Your CSS codes here */
+@import url('http://fonts.googleapis.com/css?family=Lobster');
+
+.text-logo {
+    font-family: 'Lobster', cursive;
+    color: #a53692;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+a.text-logo {
+    color: #a53692;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}

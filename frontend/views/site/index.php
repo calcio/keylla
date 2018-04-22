@@ -2,27 +2,28 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Keylla Corra Acupuntura e Estética';
+$this->title = 'Keylla Corrêa Acupuntura e Estética';
 ?>
+<div class="container">
+    <!-- Carousel starts -->
+    <?= $this->render('_carousel', ['carouselList' => null]) ?>
+    <!-- Carousel ends -->
 
-<!-- Carousel starts -->
-<?= $this->render('_carousel', ['carouselList' => null]) ?>
-<!-- Carousel ends -->
+    <br />
+    <div class="divider-1"></div>
 
-<br />
-<div class="divider-1"></div>
+    <!-- Hospital info -->
+    <?= $this->render('_info', ['info' => null]) ?>
 
-<!-- Hospital info -->
-<?= $this->render('_info', ['info' => null]) ?>
+    <br />
+    <div class="divider-1"></div>
+    <div class="row">
+        <?= $this->render('_testimonials', ['info' => null]) ?>
+        <?= $this->render('_faq', ['info' => null]) ?>
+        <div class="clearfix visible-sm-block"></div>
+        <?= $this->render('_setup_appointment', ['info' => null]) ?>
+    </div>
 
-<br />
-<div class="divider-1"></div>
-<div class="row">
-    <?= $this->render('_testimonials', ['info' => null]) ?>
-    <?= $this->render('_faq', ['info' => null]) ?>
-    <div class="clearfix visible-sm-block"></div>
-    <?= $this->render('_setup_appointment', ['info' => null]) ?>
+    <div class="divider-1"></div>
+    <br />
 </div>
-
-<div class="divider-1"></div>
-<br />
