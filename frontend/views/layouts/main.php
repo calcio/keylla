@@ -66,7 +66,7 @@ FrontAsset::register($this);
                             <!-- Main menu -->
                             <li><?= Html::a('Home', ['site/index']) ?></li>
                             <!-- <li><a href="#">Marcaçao de consulta</a></li> -->
-                            <li><?= Html::a('Tratamentos', ['treatments/index']) ?>
+                            <li><?= Html::a('Tratamentos', ['treatment/index']) ?>
                             <li><?= Html::a('Sobre', ['site/about']) ?></li>
                             <li><?= Html::a('Contato', ['site/contact']) ?></li>
                         </ul>

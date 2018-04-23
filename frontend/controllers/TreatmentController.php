@@ -2,7 +2,7 @@
 
 namespace frontend\controllers;
 
-class TreatmentsController extends \yii\web\Controller
+class TreatmentController extends \yii\web\Controller
 {
     public function actionIndex()
     {
