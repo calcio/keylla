@@ -14,6 +14,7 @@ FrontAsset::register($this);
 <html lang="<?= Yii::$app->language ?>">
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
+    <link rel="shortcut icon" href="<?= Yii::$app->request->baseUrl ?>/favicon.ico">
     <meta name="description" content="Tratamento">
     <meta name="keywords" content="Aculpuntura, Estética">
     <meta name="author" content="Cálcio, Marcelo Menezes, Menezes">
@@ -22,7 +23,6 @@ FrontAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-    <link rel="shortcut icon" href="#">
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -56,8 +56,10 @@ FrontAsset::register($this);
             <div class="row">
                 <div class="col-md-4">
                     <div class="logo">
-                        <h1 class="text-logo"><?= Html::a('Keylla Corrêa', ['site/index']) ?></h1>
-                        <h6><?= Html::a('Terapias Orientais e Enfermagem', ['site/index']) ?></h6>
+                        <?= Html::a(Html::img('@web/img/logo/logo-keylla-small.png',
+                            ['alt' => 'Keylla Corrêa - Terapias Orientais e Enfermagem',
+                            'class' => 'img-responsive']), ['site/index'])
+                        ?>
                     </div>
                 </div>
                 <div class="col-md-7">

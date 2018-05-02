@@ -16,7 +16,7 @@ use yii\helpers\Html;
                     Acupuntura é uma técnica, dentro da medicina chinesa, que harmoniza o corpo através da inserção de agulhas específicas
                     nos canais energéticos, possibilitando assim a prevenção e cura das diversas patologias físicas e emocionais.<br><br>
                 </p>
-                
+
                 <p>
                     O tratamento da Acupuntura está baseado na teoria do Yin e Yang, no conceito dos 5 movimentos (Fogo, Terra, Metal, Água e Madeira),
                     na Energia do corpo (QI) e no sangue (XUE). Após o diagnóstico energético dos padrões de desarmonia do corpo,
@@ -29,7 +29,6 @@ use yii\helpers\Html;
                 <div class="block-heading-one">
                     <h3>&nbsp;</h3>
                 </div>
-
                 <?= Html::img('@web/img/gallery/big/acupuntura_001.jpg',
                     ['alt' => 'acupuntura', 'class' => 'img-responsive']) ?>
                 <br />
