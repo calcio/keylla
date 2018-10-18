@@ -1,0 +1,44 @@
+version: '3.1'
+
+services:
+  keylla-server:
+    container_name: keylla-server
+    image: yiisoftware/yii2-php:7.1-apache
+    volumes:
+      - ~/.composer-docker/cache:/root/.composer/cache:delegated
+      - ./:/app:delegated
+    ports:
+      - "8080:80"
+    networks:
+      - keylla-network
+    environment:
+      PHP_XDEBUG_ENABLED: 1 # Set 1 to enable.
+      XDEBUG_CONFIG: "remote_host=172.17.0.1 remote_enable=1"
+
+  keylla-mysql:
+    image: mysql
+    container_name: keylla-mysql
+    # restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=acupuncture
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=acupuncture
+      - MYSQL_DATABASE=acupuncture
+    ports:
+      - "8082:3306"
+    networks:
+      - keylla-network
+    volumes:
+      - ./volumes/data:/var/lib/mysql
+
+  keylla-adminer:
+    image: adminer
+    container_name: keylla-adminer
+    ports:
+      - "8081:80"
+    networks:
+      - keylla-network
+
+networks:
+  keylla-network:
+    driver: bridge
