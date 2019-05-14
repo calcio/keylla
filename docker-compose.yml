@@ -1,19 +1,35 @@
-version: '3.1'
+version: '3.2'
 
 services:
-  keylla-server:
-    container_name: keylla-server
-    image: yiisoftware/yii2-php:7.1-apache
-    volumes:
-      - ~/.composer-docker/cache:/root/.composer/cache:delegated
-      - ./:/app:delegated
+  keylla-frontend:
+    build: frontend
+    container_name: keylla-frontend
     ports:
-      - "8080:80"
+      - 20080:80
+    volumes:
+      # Re-use local composer cache via host-volume
+      - ~/.composer-docker/cache:/root/.composer/cache:delegated
+      # Mount source-code for development
+      - ./:/app
     networks:
       - keylla-network
-    environment:
-      PHP_XDEBUG_ENABLED: 1 # Set 1 to enable.
-      XDEBUG_CONFIG: "remote_host=172.17.0.1 remote_enable=1"
+    depends_on:
+      - keylla-mysql
+
+  keylla-backend:
+    build: backend
+    container_name: keylla-backend
+    ports:
+      - 20081:80
+    volumes:
+      # Re-use local composer cache via host-volume
+      - ~/.composer-docker/cache:/root/.composer/cache:delegated
+      # Mount source-code for development
+      - ./:/app
+    networks:
+      - keylla-network
+    depends_on:
+      - keylla-mysql
 
   keylla-mysql:
     image: mysql
@@ -27,16 +43,23 @@ services:
       - MYSQL_DATABASE=acupuncture
     networks:
       - keylla-network
+    ports:
+      - "3306:3306"
     volumes:
       - ./volumes/data:/var/lib/mysql
 
-  keylla-adminer:
-    image: adminer
-    container_name: keylla-adminer
+  keylla-phpmyqdmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: keylla-phpmyqdmin
     ports:
-      - "8081:8080"
+      - "20082:80"
     networks:
       - keylla-network
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=keylla-mysql
+    depends_on:
+      - keylla-mysql
 
 networks:
   keylla-network:
