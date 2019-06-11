@@ -112,8 +112,7 @@ FrontAsset::register($this);
 
                 <div class="col-md-3 col-sm-6">
                     <div class="foot-item">
-                    <!--
-                        <h5 class="bold"><i class="fa fa-comments"></i>&nbsp;&nbsp;Postagens recentes</h5>
+                        <!--<h5 class="bold"><i class="fa fa-comments"></i>&nbsp;&nbsp;Postagens recentes</h5>
                         <div class="foot-item-content">
                             <ul class="list-unstyled">
                                 <li><a href="#">Denocing Sapientes Contain</a></li>
