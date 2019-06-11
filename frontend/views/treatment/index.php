@@ -21,10 +21,11 @@ $this->title = 'Tratamentos';
                 <li class="active"><a href="#tab-1" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Auriculoterapia Reflexa</a></li>
                 <li><a href="#tab-2" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Ventosaterapia</a></li>
                 <li><a href="#tab-3" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Acupuntura em Estética</a></li>
-                <li><a href="#tab-4" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Hipnose</a></li>
-                <li><a href="#tab-5" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Educação da Mente</a></li>
-                <li><a href="#tab-6" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Moxabustão</a></li>
-                <li><a href="#tab-7" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Curativos e Feridas</a></li>
+                <li><a href="#tab-4" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Barra de Access</a></li>
+                <li><a href="#tab-5" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Hipnose</a></li>
+                <li><a href="#tab-6" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Educação da Mente</a></li>
+                <li><a href="#tab-7" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Moxabustão</a></li>
+                <li><a href="#tab-8" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Curativos e Feridas</a></li>
             </ul>
         </div>
         <!-- Design Three Content -->
@@ -82,7 +83,17 @@ $this->title = 'Tratamentos';
                     </ul>
                     <div class="clearfix"></div>
                 </div>
-                <div class="tab-pane fade" id="tab-4">
+                <div class="tab-pane active fade in" id="tab-4">
+                    <div class="block-heading-two">
+                        <h3><span>Barra de Access</span></h3>
+                    </div>
+                    <!-- image -->
+                    <p>
+                        
+                    </p>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="tab-pane fade" id="tab-5">
                     <div class="block-heading-two">
                         <h3><span>Hipnose</span></h3>
                     </div>
@@ -93,7 +104,7 @@ $this->title = 'Tratamentos';
                     </p>
                     <div class="clearfix"></div>
                 </div>
-                <div class="tab-pane fade" id="tab-5">
+                <div class="tab-pane fade" id="tab-6">
                     <div class="block-heading-two">
                         <h3><span>Educação da Mente - Cristais Radionicos - tratamento de doenças emocionais</span></h3>
                     </div>
@@ -105,7 +116,7 @@ $this->title = 'Tratamentos';
                     </p>
                     <div class="clearfix"></div>
                 </div>
-                <div class="tab-pane fade" id="tab-6">
+                <div class="tab-pane fade" id="tab-7">
                     <div class="block-heading-two">
                         <h3><span>Moxabustão</span></h3>
                     </div>
@@ -118,7 +129,7 @@ $this->title = 'Tratamentos';
                     </p>
                     <div class="clearfix"></div>
                 </div>
-                <div class="tab-pane fade" id="tab-7">
+                <div class="tab-pane fade" id="tab-8">
                     <div class="block-heading-two">
                         <h3><span>Curativos e Feridas</span></h3>
                     </div>
