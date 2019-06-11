@@ -129,7 +129,6 @@ FrontAsset::register($this);
                     <div class="foot-item">
                         <h5 class="bold"><i class="fa fa-building-o"></i>&nbsp;&nbsp;Contatos</h5>
                         <div class="foot-item-content address">
-                            <h6 class="bold"><i class="fa fa-home"></i>&nbsp;&nbsp;Keylla Correa</h6>
                             <!-- Paragraph
                             <p class="add">
                                Rua Profª. Delfina de F. Gomes, Nº 112, Casa 2<br />
