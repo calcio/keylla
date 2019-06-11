@@ -25,6 +25,8 @@ class m170521_180042_create_patients_table extends Migration
             'address' => $this->string(255),
             'phone' => $this->smallInteger(10),
             'cellPhone' => $this->smallInteger(10),
+            'created_at' => $this->timestamp()->defaultExpression('CURRENT_TIMESTAMP')->notNull(),
+            'updated_at' => $this->timestamp()->defaultExpression('CURRENT_TIMESTAMP')->notNull(),
         ]);
 
         // creates index for column `matrialStatusId`
