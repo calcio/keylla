@@ -22,10 +22,11 @@ $this->title = 'Tratamentos';
                 <li><a href="#tab-2" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Ventosaterapia</a></li>
                 <li><a href="#tab-3" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Acupuntura em Estética</a></li>
                 <li><a href="#tab-4" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Barra de Access</a></li>
-                <li><a href="#tab-5" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Hipnose</a></li>
-                <li><a href="#tab-6" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Educação da Mente</a></li>
-                <li><a href="#tab-7" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Moxabustão</a></li>
-                <li><a href="#tab-8" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Curativos e Feridas</a></li>
+                <li><a href="#tab-5" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Cone Hindu</a></li>
+                <li><a href="#tab-6" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Hipnose</a></li>
+                <li><a href="#tab-7" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Educação da Mente</a></li>
+                <li><a href="#tab-8" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Moxabustão</a></li>
+                <li><a href="#tab-9" data-toggle="tab"><i class="fa fa-angle-double-right"></i> &nbsp; Curativos e Feridas</a></li>
             </ul>
         </div>
         <!-- Design Three Content -->
@@ -83,17 +84,34 @@ $this->title = 'Tratamentos';
                     </ul>
                     <div class="clearfix"></div>
                 </div>
-                <div class="tab-pane active fade in" id="tab-4">
+                <div class="tab-pane active fade" id="tab-4">
                     <div class="block-heading-two">
                         <h3><span>Barra de Access</span></h3>
                     </div>
                     <!-- image -->
-                    <p>
-                        
-                    </p>
+                    <p>As Barras de Access é uma terapia corporal que permite que você e o seu corpo comecem a desprender-se dos pensamentos, idéias, 
+                    condicionamentos, emoções, atitudes e crenças limitantes que você tenha registrado sobre quaisquer situação ou experiência.</p>
+
+                    <p>As Barras são 32 pontos na cabeça onde estão armazenados todos os pensamentos, ideias. Quando as Barras® são ativadas, através do toque na cabeça, 
+                    é como apertar a tecla “delete”, do computador, apagando esses condicionamentos que não nos servem mais, permitindo assim mais espaço disponível para 
+                    poder receber e criar experiências completamente novas.</p>
                     <div class="clearfix"></div>
                 </div>
-                <div class="tab-pane fade" id="tab-5">
+                <div class="tab-pane active fade" id="tab-5">
+                    <div class="block-heading-two">
+                        <h3><span>Cone Hindu</span></h3>
+                    </div>
+                    <!-- image -->
+                    <p>O Cone Hindu, conhecido também como Cone Chinês, é uma terapia que tem como principal objetivo a desobstrução dos canais energéticos 
+                    (limpeza do campo áurico), desobstrução do ouvido, nariz e garganta.</p>
+
+                    <p>Trata-se de uma técnica popular passada de geração a geração. Utilizada há mais de três mil anos pelos hindus para limpar os ouvidos e 
+                    canais respiratórios e pelas elites religiosas das grandes civilizações, como sacerdotes maias e monges tibetanos para obter centralização, 
+                    alinhamento e harmonização de pensamentos, sentimentos, emoções e todos os demais aspectos que, quando em equilíbrio favorecem a conexão com a 
+                    divindade, a comunicação com as esferas superiores.</p>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="tab-pane fade" id="tab-6">
                     <div class="block-heading-two">
                         <h3><span>Hipnose</span></h3>
                     </div>
@@ -104,7 +122,7 @@ $this->title = 'Tratamentos';
                     </p>
                     <div class="clearfix"></div>
                 </div>
-                <div class="tab-pane fade" id="tab-6">
+                <div class="tab-pane fade" id="tab-7">
                     <div class="block-heading-two">
                         <h3><span>Educação da Mente - Cristais Radionicos - tratamento de doenças emocionais</span></h3>
                     </div>
@@ -116,7 +134,7 @@ $this->title = 'Tratamentos';
                     </p>
                     <div class="clearfix"></div>
                 </div>
-                <div class="tab-pane fade" id="tab-7">
+                <div class="tab-pane fade" id="tab-8">
                     <div class="block-heading-two">
                         <h3><span>Moxabustão</span></h3>
                     </div>
@@ -129,7 +147,7 @@ $this->title = 'Tratamentos';
                     </p>
                     <div class="clearfix"></div>
                 </div>
-                <div class="tab-pane fade" id="tab-8">
+                <div class="tab-pane fade" id="tab-9">
                     <div class="block-heading-two">
                         <h3><span>Curativos e Feridas</span></h3>
                     </div>
