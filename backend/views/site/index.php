@@ -2,7 +2,8 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Admin';
+Yii::$app->params['headerPage'] = 'Dashboard';
 ?>
 <div class="site-index">
 
