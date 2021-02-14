@@ -15,10 +15,10 @@ $this->title = 'Sobre';
 
 <div class="container">
     <div class="about-us-one">
-        
 
-        <p>This is the About page. You may modify the following file to customize its content:</p>
-
-        <code><?= __FILE__ ?></code>
+        <p>Sou Enfermeira , Auriculoterapeuta, Professora e pós graduada em acupuntura chinesa. Realizo tratamento de auriculoterapia com ou sem uso de agulhas.</p>
+        <br />
+        <p>Dou preferência aos cristais radiônicos, no qual tem mostrado grandes resultados em curto tempo.</p>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
 </div>

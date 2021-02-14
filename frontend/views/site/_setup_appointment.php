@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Html;
 ?>
-    <div class="col-md-4 col-sm-6">
+    <div class="col-md-6 col-sm-6">
         <!-- Make appointment -->
         <div class="well well1-lg">
             <h4>Marque uma consulta</h4>
